@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component , OnInit} from '@angular/core';
+import {Goal} from './goal';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Goals';
+  title = 'My Goals';
+  goal = 'You want to see my Goals?';
+  goals = [
+    new Goal(1, 'Watch Dj S'),
+    new Goal(2, 'Buy cookies'),
+    new Goal(3, 'Get new phone case'),
+    new Goal(4, 'Get dog food'),
+    new Goal(5, 'Solve math homework'),
+  ];
 }
